@@ -1,1 +1,1 @@
-# google-analytics-4
+# GA4
