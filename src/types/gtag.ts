@@ -223,6 +223,7 @@ interface Search {
 
 interface gtag {
   (command:'config', TARGET_ID:string, configInfo?: KeyValueParams | ControlParams): void;
+  (command:'js', value: Date):void;
   (command:'get', TARGET_ID:string, fieldName:string, callbackFunc: requestedFieldCallback): void;
   (command:'set', customerParameter: KeyValueParams | ControlParams):void;
   (command:'event', eventName:'add_payment_info', customerParameter:AddPaymentInfo | KeyValueParams | ControlParams):void;
@@ -263,4 +264,4 @@ interface gtag {
   (command:'consent', consent:'update', customerParameter:ConsentParams | KeyValueParams):void;
 }
 
-export {gtag};
+export {gtag, KeyValueParams};
