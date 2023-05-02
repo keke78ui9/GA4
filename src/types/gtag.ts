@@ -79,13 +79,6 @@ interface AddToWishlistOrRemoveFromCart {
   items:Array<ItemParameters>;
 }
 
-interface BeginCheckout {
-  currency:string;
-  value:number;
-  coupon?:string;
-  items:Array<ItemParameters>;
-}
-
 interface EarnVirtualCurrency {
   earn_virtual_currency?:string;
   value?:number;
