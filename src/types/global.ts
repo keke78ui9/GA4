@@ -3,11 +3,8 @@ import { gtag } from "./gtag";
 
 declare global {
   
-    interface Array<T> {
-      findLast(predicate: (value:T, index:number, array:T[]) => unknown, thisArg?:any ): T | undefined
-    }
 
-    interface Window {
+  interface Window {
       dataLayer: Array<DataLayerObject>;
       gtag:gtag;
     }

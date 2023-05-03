@@ -1,4 +1,7 @@
 import {ga} from './ga4/index';
-import {get as dataLayerGet} from './dataLayer';
+import {get} from './dataLayer';
 
-export {ga, dataLayerGet};
+const dataLayerHelper = { get };
+const ga4 = ga;
+
+export {ga4, dataLayerHelper};

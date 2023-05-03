@@ -1,6 +1,7 @@
 import { ga4Option } from "./ga4option";
 import { DataLayerObject } from "../types/dataLayer";
-import { KeyValueParams } from "../types/gtag";
+import { KeyValueParams, gtag } from "../types/gtag";
+import {} from '../types/global';
 
 class ga4 {
 
@@ -25,11 +26,15 @@ class ga4 {
         return ga4.instance;
     }
 
-    public event(eventName:string, eventParameters: KeyValueParams ): boolean {
+    public send(eventName:string, eventParameters: KeyValueParams ): boolean {
 
         window.gtag('event', eventName, eventParameters);
 
         return true;
+    }
+
+    get gtag() : gtag {
+        return window.gtag;
     }
 }
 
