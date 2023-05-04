@@ -23,7 +23,11 @@
     "Google Analytic",
     "gtag",
     "dataLayer",
-    "analytics"
+    "analytics",
+    "Google Analytics 4",
+    "GA",
+    "GTM",
+    "Google Tag Manager"
   ],
   "repository": "https://github.com/keke78ui9/ga4.git",
   "author": "keke78ui9",
