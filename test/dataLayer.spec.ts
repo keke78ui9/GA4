@@ -23,6 +23,21 @@ describe('test dataLayer get function', () => {
 
     });
 
+    test('If dataLayer array has object use the key should get the value', () => {
+
+        const data = [
+            {event: 'test'},
+            ['js'],
+            ['config', 'g-123'],
+            ['event', 'conversion', {'allow': true}]
+        ];        
+        window.dataLayer = data;
+
+        const result = dataLayerHelper.get('allow');
+        expect(result).toBe(true);
+
+    });
+
     test('if get last is true should return the last item', () => {
 
         window.dataLayer = window.dataLayer || [];

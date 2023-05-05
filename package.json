@@ -1,6 +1,6 @@
 {
   "name": "@technoapple/ga4",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "TypeScript Node.js library to support GA4 analytics.",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -23,15 +23,19 @@
     "Google Analytic",
     "gtag",
     "dataLayer",
-    "analytics"
+    "analytics",
+    "Google Analytics 4",
+    "GA",
+    "GTM",
+    "Google Tag Manager"
   ],
-  "repository": "https://github.com/keke78ui9/ga4.git",
+  "repository": "https://github.com/technoapple/ga4.git",
   "author": "keke78ui9",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/keke78ui9/ga4/issues"
+    "url": "https://github.com/technoapple/ga4/issues"
   },
-  "homepage": "https://github.com/keke78ui9/ga4#readme",
+  "homepage": "https://github.com/technoapple/ga4#readme",
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
