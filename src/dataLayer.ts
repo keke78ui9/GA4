@@ -30,6 +30,16 @@ function getDataValue(key:string, currentData: DataLayerObject) {
         if (data) {
             return data;
         }
+
+        const dataObj = arr.find(c => isObject(c));
+        if (dataObj) {
+            const data = dataObj[key];
+            if (data) {
+                return data;
+            }
+            return null;
+        }
+
         return null;
     }
     else {
